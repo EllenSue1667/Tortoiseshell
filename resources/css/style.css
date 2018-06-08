@@ -25,7 +25,7 @@ body {
   color: white;
   margin-right: 2rem;
   margin-top: 1rem;
-
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -46,6 +46,11 @@ body {
 }
 
 nav span {
+  display: inline-block;
+  padding-left: 2rem;
+}
+
+.altnav {
   display: inline-block;
   padding-left: 2rem;
 }
@@ -71,4 +76,73 @@ nav span {
   font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
+}
+
+
+@media only screen and (min-width: 1025px) {
+  .altnav {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 671px) and (max-width: 1024px) {
+  .altnav {
+    display: none;
+  }
+  .main {
+    height: 22rem;
+  }
+  .header {
+    width: 100%;
+    margin-top: 0rem;
+    margin-right: 0rem;
+  }
+  .tag {
+    width: 100%;
+    height: 5.5rem;
+  }
+  .line {
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+  .line span {
+    font-size: 1.33rem;
+    line-height: 1.2;
+  }
+
+
+}
+
+@media only screen and (max-width: 670px) {
+  nav span {
+    display: none;
+  }
+  .main {
+    height: 17rem;
+  }
+  .header {
+    width: 100%;
+    margin-top: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 5rem;
+  }
+  .tag {
+    width: 100%;
+    height: 0rem;
+    justify-content: center;
+  }
+  .line {
+    padding: 1rem 0rem;
+    margin-right: 0rem;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+  }
+  .line span {
+    font-size: 1rem;
+    line-height: 1;
+
+  }
+
 }
