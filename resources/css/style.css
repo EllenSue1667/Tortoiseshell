@@ -130,6 +130,69 @@ nav span {
   margin: auto;
 }
 
+/* Products */
+
+.products {
+  display: flex;
+  width: 960px;
+  justify-content: center;
+  margin: auto;
+}
+
+.philosophy {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  width: 35%;
+}
+
+.appointments {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  margin-left: 5%;
+  width: 35%;
+}
+
+.title {
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  background-color: cadetblue;
+  width: 10rem;
+}
+
+.philosophy span {
+  padding: 1rem 0rem;
+}
+
+.appointments span {
+  padding: 1rem 0rem;
+}
+
+/* Footer */
+
+.footer {
+  background-color: azure;
+  width: 960px;
+  margin: 0rem auto;
+}
+
+.footerlogo {
+  display: flex;
+  padding: 4rem;
+}
+
+.footerlogo img {
+  height: 1.5rem;
+  width: auto;
+}
+
+.footerlogo span {
+  padding-left: 1rem;
+}
+
 @media only screen and (min-width: 1025px) {
   .altnav {
     display: none;
@@ -166,6 +229,12 @@ nav span {
   }
   .itemexam {
     margin: 1.54rem;
+  }
+  .products {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
   }
 
 }
@@ -209,5 +278,45 @@ nav span {
   .itemexam {
     margin: 0.77rem;
   }
+  .products {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0rem;
+    justify-content: center;
+  }
+  .philosophy {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .appointments {
+    width: 100%;
+    margin-bottom: 4rem;
+    margin-left: 0rem;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0rem;
+  }
+  .philosophy span {
+    padding: 1rem 0.5rem;
+    font-size: 0.77rem;
+  }
+  .appointments span {
+    padding: 1rem 0.5rem;
+    font-size: 0.77rem;
+  }
+  .footer {
+    width: 100%;
+    justify-content: center;
+  }
+  .footerlogo {
+    padding: 4rem 0rem;
+    justify-content: center;
+  }
+  .footerlogo span {
+    display: none;
+  }
+
 
 }
